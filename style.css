@@ -10,7 +10,6 @@ section{
     gap: 20px;
 }
 body{
-    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;

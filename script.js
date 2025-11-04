@@ -18,22 +18,22 @@
  }
 
  const sortBars = () => {
-     sectionBar.innerHTML = ``;
-     for (let i = 0; i < char.length; i++) {
-         for (let j = 0; j < char.length; j++) {
-           if (char[j] > char[j + 1]) {
-                // swap
+    // Do the sorting (your current logic)
+    for (let i = 0; i < char.length; i++) {
+        for (let j = 0; j < char.length - 1; j++) {
+            if (char[j] > char[j + 1]) {
                 [char[j], char[j + 1]] = [char[j + 1], char[j]];
             }
-         }
-     }
-
-     for (let i = 0; i < char.length; i++) {
-         sectionBar.innerHTML += `
-     <div style="height: ${char[i]}em; width: 70px; background: #aaa;"></div>
-     `;
-     }
- }
+        }
+    }
+    
+    setTimeout(() => {
+        sectionBar.innerHTML = ``;
+        for (let i = 0; i < char.length; i++) {
+            sectionBar.innerHTML += `<div style="height: ${char[i]}em; width: 70px; background: #aaa;"></div>`;
+        }
+    }, 2000);
+}
 
  const revertBars = () => {
      sectionBar.innerHTML = ``;
