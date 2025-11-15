@@ -1,25 +1,29 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-section{
-    padding: 80px 0 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+section {
+  padding: 80px 0 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
-button{
-    height: 50px;
-    width: 150px;
+button {
+  height: 50px;
+  width: 150px;
 }
-#buttonContainer{
-    gap: 20px;
-    display: flex;
+#buttonContainer {
+  gap: 20px;
+  display: flex;
+}
+.invisible {
+  display: none;
 }
